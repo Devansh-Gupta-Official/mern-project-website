@@ -27,6 +27,16 @@ const PlaceItem = props => {
           <Map center={props.coordinates} zoom={16} />
         </div>
       </Modal>
+
+      <Modal header='Are you sure?' footerClass='place-item__modal-actions'  footer={
+        <React.Fragment>
+          <Button inverse=""></Button>
+          <Button></Button>
+        </React.Fragment>
+      }>
+        <p> Do you want to proceed and delete this place? Please note that it can't be undone.</p>
+      </Modal>
+
       <li className="place-item">
         <Card className="place-item__content">
           <div className="place-item__image">
